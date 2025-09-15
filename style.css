@@ -1,0 +1,23 @@
+body {
+    width: 20%;
+    margin: auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.selector button {
+    height: 200px;
+}
+
+.selector img {
+    width: 200px;
+}
