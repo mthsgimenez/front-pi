@@ -1,39 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Guarda roupa inteligente</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
 </head>
 <body>
-    <div id="container">
-        <div id="head" class="selector">
-            <button id="previous-head">&lt;</button>
-            <img id="img-head">
-            <button id="next-head">&gt;</button>
+
+<header>
+    <h1>Guarda roupa inteligente</h1>
+</header>
+
+<main>
+    <div class="carousel">
+        <button class="button left" onclick="moveCarousel('hats', -1)">&#10094;</button>
+        <div class="carousel-container" id="hats">
         </div>
-        <div id="neck" class="selector">
-            <button id="previous-neck">&lt;</button>
-            <img id="img-neck">
-            <button id="next-neck">&gt;</button>
-        </div>
-        <div id="top" class="selector">
-            <button id="previous-top" onclick="navigate('previous', 'top')">&lt;</button>
-            <img id="img-top">
-            <button id="next-top" onclick="navigate('next', 'top')">&gt;</button>
-        </div>
-        <div id="bottom" class="selector">
-            <button id="previous-bottom">&lt;</button>
-            <img id="img-bottom">
-            <button id="next-bottom">&gt;</button>
-        </div>
-        <div id="foot" class="selector">
-            <button id="previous-foot" onclick="navigate('next', 'foot')">&lt;</button>
-            <img id="img-foot">
-            <button id="next-foot" onclick="navigate('previous', 'foot')">&gt;</button>
-        </div>
+        <button class="button right" onclick="moveCarousel('hats', 1)">&#10095;</button>
     </div>
-    <script src="script.js"></script>
+
+    <div class="carousel">
+        <button class="button left" onclick="moveCarousel('tops', -1)">&#10094;</button>
+        <div class="carousel-container" id="tops">
+        </div>
+        <button class="button right" onclick="moveCarousel('tops', 1)">&#10095;</button>
+    </div>
+
+    <div class="carousel">
+        <button class="button left" onclick="moveCarousel('pants', -1)">&#10094;</button>
+        <div class="carousel-container" id="pants">
+        </div>
+        <button class="button right" onclick="moveCarousel('pants', 1)">&#10095;</button>
+    </div>
+
+    <div class="carousel">
+        <button class="button left" onclick="moveCarousel('shoes', -1)">&#10094;</button>
+        <div class="carousel-container" id="shoes">
+        </div>
+        <button class="button right" onclick="moveCarousel('shoes', 1)">&#10095;</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
